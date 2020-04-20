@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>player intro</title>
+	<style>
+
+.yo{
+    position: absolute;
+    left:380px;
+    top:130px;
+    }
+img.yo{
+	width:1024px;
+	height:1024px;
+}
+img.ballpic{
+	width:111px;
+	height:112px;
+}
+img.photo{
+	width:90px;
+	height:66px;
+	position:absolute;
+	left:10px;
+	top:20px;
+}
+.qq{
+	text-align:left;
+	left:130px;
+	top:-60px;
+	color: #59421d;
+	font-size:0.5cm;
+}
+.pic2{
+	position:absolute;
+	left:1230px;
+	top:1030px;
+    }
+.pic08{
+	position:absolute;
+	left:1650px;
+	top:810px;
+}
+.pic11{
+	position:absolute;
+	left:1430px;
+	top:690px;
+}
+.pic17{
+	position:absolute;
+	left:1220px;
+	top:770px;
+}
+.pic21{
+	position:absolute;
+	left:790px;
+	top:810px;
+}
+.pic18{
+	position:absolute;
+	left:1000px;
+	top:690px;
+}
+.pic14{
+	position:absolute;
+	left:1600px;
+	top:570px;
+}
+.pic49{
+	position:absolute;
+	left:1220px;
+	top:560px;
+}
+.pic16{
+	position:absolute;
+	left:810px;
+	top:570px;
+}
+.bigger{
+	transition:transform 0.3s ease-in-out;
+}
+.bigger:hover{
+	transform:scale(1.7);
+}
+  .info{
+  opacity: 0;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.3);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 40px;
+  }
+  .info p{
+  color: #2c0703;
+  }
+  .info:hover{
+  -webkit-transition: 500ms;
+  opacity: 1;
+  transform: scale(1.1);
+  }
+  .container{
+   width: 100px;
+   height:100px;
+   margin: 0 auto;
+  }
+  .card{
+   position: absolute;
+   width: 110px;
+   float:left;
+   margin: 0px;
+  }
+  .ta{
+  	position:absolute;
+  	left:160px;
+  	top:300px;
+  }
+  .jj {
+  	text-align:center;
+  	background-color:#f2b24b;
+  	font-size:53px;
+  	font-family:"標楷體";
+  	font-weight:bold;
+  	color: #2c0703;
+  }
+
+
+  		@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+		@import url(sheet.css);
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+			body{
+				background-image:url("../img/bg.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			h1{
+				border text-align:center;
+				font-family: 'cwTeXYen', sans-serif;
+				color:#28004D;
+				font-size:50px;
+				padding:30px;
+				position:absolute;
+				left: 781px;
+				top: -22px;
+
+			}
+			p{
+				padding:15px 0px;
+				font-size:26px;
+				text-align: left;
+				position: relative;
+				left:260px;
+				font-family: Microsoft YaHei;
+				color:#FCFCFC;
+			}
+			h2{
+				position: relative;
+			    left: -346px;
+			    padding-top: 20px;
+			    color: red;
+			    font-family: 微軟正黑體;
+			    font-size: 34px;
+			}
+			input{
+				cursor:pointer;
+				position: relative;
+				left:200px;
+			}
+			.sel{
+				position:fixed;
+				right:-114px;
+				top:200px;
+				background-color: #dedede;
+				border-radius: 10px;
+			}
+			.sel:hover{
+				position:fixed;
+				right:0px;
+				top:200px;
+				background-color: #dedede;
+				display:block;
+			}
+
+			td{
+
+				font-family: 微軟正黑體;
+				font-size:22px;
+				color:black;
+			}
+			.sma{
+				width:100%;
+				height:70px;
+				background-color: #a52a2ae6;
+				position: relative;
+				bottom: -1169px;
+			}
+			img{
+				width:20px;
+				height:20px;
+			}
+			div.bar{
+				
+				width:    text-align:center;l108%;
+				height:20%;
+				background-color:#fffdee00;
+				position:relative;
+				top: -15px;
+			    box-shadow:0px 0px 50px;
+			
+			}
+			img.logo{
+
+				width:20%;
+				height:10%;
+				opacity:0.5555;
+			}
+			div.who{
+
+				width:1320px;
+				background-color:#00000000;
+				position:absolute;
+				left:300px;
+				top:116px ;
+				margin:15px 0px 100px;
+				border-radius: 10px;
+				padding: 10px 0px 60px 0px;
+				
+			}
+			.tel{
+
+				width: 877px;
+				height: 571px;
+				z-index: -1;
+				position: absolute;
+				border-radius: 35px;
+				bottom: -6px;
+				right: 223px;
+			}
+			
+			#line ul li{
+			  font-size:35px;
+			  color:#FF2D2D;
+			  float:left;
+			  font-weight:bold;
+			  width:250px;
+			  position:relative;
+			  right:-300px;
+			  list-style-image:url('../img/ball.png');
+			  z-index: 100;
+			  font-family: 'Noto Sans TC', sans-serif;
+			}
+			.alink{
+			font-size:25px;
+			color:#ee3a23;
+			float:left;
+			font-weight:bold;
+			width:250px;
+			position:relative;
+		}
+		.contact{
+			width:10%;
+			height:auto;
+			opacity:0.6;
+			position: absolute;
+			top: -40px;
+			left: 1600px;
+		}
+		.contact:hover{
+			width:10%;
+			height:auto;
+			opacity:1;
+			position: absolute;
+			top: -40px;
+			left: 1600px;
+		}
+
+    </style>
+
+</head>
+<body>
+<table class="ta">
+<tr>
+  <td class="jj">棒次</td>
+  <td class="jj">名字</td>
+  <td class="jj">背號</td>
+</tr>
+<tr>
+  <td class="jj">第一棒</td>
+  <td class="jj">詹勳凱</td>
+  <td class="jj">02</td>
+</tr>
+<tr>
+  <td class="jj">第二棒</td>
+  <td class="jj">彭楊安</td>
+  <td class="jj">08</td>
+</tr>
+<tr>
+  <td class="jj">第三棒</td>
+  <td class="jj">鄭旭傑</td>
+  <td class="jj">11</td>
+</tr>
+<tr>
+  <td class="jj">第四棒</td>
+  <td class="jj">彭楊龍</td>
+  <td class="jj">17</td>
+</tr>
+<tr>
+  <td class="jj">第五棒</td>
+  <td class="jj">呂宗斌</td>
+  <td class="jj">21</td>
+</tr>
+<tr>
+  <td class="jj">第六棒</td>
+  <td class="jj">范姜昱程</td>
+  <td class="jj">18</td>
+</tr>
+<tr>
+  <td class="jj">第七棒</td>
+  <td class="jj">陳予舜</td>
+  <td class="jj">14</td>
+</tr>
+<tr>
+  <td class="jj">第八棒</td>
+  <td class="jj">吳奕賢</td>
+  <td class="jj">49</td>
+</tr>
+<tr>
+  <td class="jj">第九棒</td>
+  <td class="jj">薛朝翰</td>
+  <td class="jj">16</td>
+</tr>
+</table>
+<div class="yo">
+    <img src="../img/baseball park.jpg" alt="球員介紹" class="yo" >
+</div>
+
+<div class="pic2">
+	<div class="bigger">
+		<div class="container">
+			<div class="card">
+				<img src="../img/2.png" alt="圖2" class="ballpic">
+					<div class="info">
+						<p class="qq">2號球員：<br>詹勳凱<br>守備位置：<br>捕手<br></p>
+						<img src="../img/p2.jpg" alt="p2" align="left" class="photo">
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pic08">
+	<div class="bigger">
+		<div class="container">
+			<div class="card">
+				<img src="../img/08.png" alt="圖08" class="ballpic">
+					<div class="info">
+						<p class="qq">8號球員:<br>彭楊安<br>守備位置:<br>一壘手<br></p>
+						<img src="../img/p8.jpg" alt="p8" align="left" class="photo">
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pic11">
+	<div class="bigger">
+		<div class="container">
+			<div class="card">
+				<img src="../img/11.png" alt="圖11" class="ballpic">
+					<div class="info">
+						<p class="qq">11號球員:<br>鄭旭傑<br>守備位置:<br>二壘<br></p>
+						<img src="../img/p11.jpg" alt="p11" align="left" class="photo">
+					</div>
+			</div>
+		</div>			
+	</div>
+</div>
+
+<div class="pic17">
+	<div class="bigger">
+		<div class="container">
+			<div class="card">
+				<img src="../img/17.png" alt="圖17" class="ballpic">
+					<div class="info">
+						<p class="qq">17號球員:<br>彭楊龍<br>守備位置:<br>投手<br></p>
+						<img src="../img/p17.jpg" alt="p17" align="left" class="photo">
+					</div>
+			</div>
+		</div>			
+	</div>
+</div>
+
+<div class="pic21">
+	<div class="bigger">
+		<div class="container">
+			<div class="card">
+				<img src="../img/21.png" alt="圖21" class="ballpic">
+					<div class="info">
+						<p class="qq">21號球員:<br>呂宗斌<br>守備位置:<br>三壘手<br></p>
+						<img src="../img/p21.jpg" alt="p17" align="left" class="photo">
+					</div>
+			</div>
+		</div>			
+	</div>
+</div>
+
+<div class="pic18">
+	<div class="bigger">
+		<div class="container">
+			<div class="card">
+				<img src="../img/18.png" alt="圖18" class="ballpic">
+					<div class="info">
+						<p class="qq">18號球員:<br>范姜昱程<br>守備位置:<br>游擊手<br></p>
+						<img src="../img/p18.jpg" alt="p18" align="left" class="photo">
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pic14">
+	<div class="bigger">
+		<div class="container">
+			<div class="card">
+				<img src="../img/14.png" alt="圖14" class="ballpic">
+					<div class="info">
+						<p class="qq">14號球員:<br>陳予舜<br>守備位置:<br>右外野手<br></p>
+						<img src="../img/p14.jpg" alt="p14" align="left" class="photo">
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pic49">
+	<div class="bigger">
+		<div class="container">
+			<div class="card">
+				<img src="../img/49.png" alt="圖49" class="ballpic">
+					<div class="info">
+						<p class="qq">49號球員:<br>吳奕賢<br>守備位置:<br>中外野手<br></p>
+						<img src="../img/p49.jpg" alt="p49" align="left" class="photo">
+					</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<div class="pic16">
+	<div class="bigger">
+		<div class="container">
+			<div class="card">
+				<img src="../img/16.png" alt="圖16" class="ballpic">
+					<div class="info">
+						<p class="qq">16號球員:<br>薛朝翰<br>守備位置:<br>左外野手<br></p>
+						<img src="../img/p16.jpg" alt="p16" align="left" class="photo">
+					</div>
+			</div>
+		</div>			
+	</div>
+</div>
+
+
+<div class=bar>
+		<img class=logo src=../img/3.png>
+
+		<h1>中原大學棒球隊</h1>
+	</div>
+	<nav>
+	<a href="https://forms.gle/ETiChtkHSFDNjdex7"><img class="contact" src="../img/form.png"></a>
+	
+	
+	<div id ="line" >
+	  <ul >
+	    <li><a class="alink" href="../index.html">首頁</a></li>
+				<li><a class="alink" href="intro.html">球員介紹</a></li>
+				<li><a class="alink" href="contest.html">比賽活動</a></li>
+				<li><a class="alink" href="video.html">小組影片</a></li>
+				<li><a class="alink" href="member.html">關於我們</a></li>
+
+
+	  </ul>
+    </div>
+	</nav>
+    <div class=sma>
+			<p style="font-size:20px;position: relative;left:-750px;">©中原大學棒球隊&nbsp;&nbsp;電話:+886-03-22840324 <a href=https://www.facebook.com/pg/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8%E6%A3%92%E7%90%83%E9%9A%8A-501420716571318/community/?ref=page_internal/><img src=../img/fb1.png>          中原大學棒球隊FaceBook粉絲</a></p>
+			
+		</div>	 
+
+
+
+</body>
+</html>
